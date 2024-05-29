@@ -75,4 +75,3 @@ class solution:
             else:
                 anagram(sortedStr).append(i)
         return list(anagram.values())
-    
