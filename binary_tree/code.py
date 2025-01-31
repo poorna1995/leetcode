@@ -7,13 +7,12 @@ class BSTNode:
     def print(self,key):
         print(self.key)
     
-class BSTTree:
+class BSTTree(BSTNode):
     def __init__(self):
         self.root = None
         
-        
     def insert(self,key):
-        new_node = key
+        new_node = BSTNode(key)
         if self.root == None:
             self.root = new_node
         else:
@@ -29,7 +28,20 @@ class BSTTree:
                 node.right = new_node
             else:
                 self._insert(node.right, new_node)
-    
+                
+    def inorder_traversal(self):
+        result = []
+        self.order
 
-node = BSTNode(10)
+tree = BSTTree()
+
+tree.insert(10)
+tree.insert(2)
+
+
+
+
+print("Inorder Traversal: ")
+tree.inorder_traversal(tree.root)  
+
 
