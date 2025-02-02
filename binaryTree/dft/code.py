@@ -6,6 +6,8 @@ class BSTNode:
 
 class DepthFirstTraversal:
     def dft(self,root):
+        if root is not None:
+            return []
         stack = [root]
         values = []
         while len(stack)>0:
