@@ -28,20 +28,28 @@ class BSTTree(BSTNode):
                 node.right = new_node
             else:
                 self._insert(node.right, new_node)
-                
-    def inorder_traversal(self):
-        result = []
-        self.order
-
-tree = BSTTree()
-
-tree.insert(10)
-tree.insert(2)
-
-
-
-
-print("Inorder Traversal: ")
-tree.inorder_traversal(tree.root)  
-
-
+        
+    def inorderTranversal():
+        result =[]
+        self.inorder(self.root,result)
+        return result
+    def inorder():
+        if node is not None:
+            self.inorder(node.left,result)
+            result.append(node.key)
+            self.inorder(node.right,result)
+            
+            
+            
+    def PostOrderTranversal():
+        result =[]
+        self.inorder(self.root,result)
+        return result
+    def postorder():
+        if node is not None:
+            self.postorder(node.left,result)
+            self.postorder(node.right,result)
+            result.append(node.key)
+            
+            
+            
