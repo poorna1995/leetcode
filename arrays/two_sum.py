@@ -1,12 +1,4 @@
 def TwoSum(nums,target):
-    for i in range (len(nums)):
-        print(i)
-        if (target- nums[i-1]) == nums[i]:
-            return  [i-1, i]
-    return []
-    
-    
-def TwoSum(nums,target):
     for i in range(len(nums)):
         for j in range(i+1,len(nums)):
             if nums[i]+nums[j] == target:
