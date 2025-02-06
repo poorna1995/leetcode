@@ -6,19 +6,22 @@ def TwoSum(nums,target):
     return []
 
 
-def TwoSum(nums,target):
-    d ={}
-    for i, num in enumerate(nums):
-        t = target -num
-        if t in d:
-            return [d[t],i]
-        else:
-            d[num] =i
-
 
 nums = [2,7,11,15]
 target = 9
 print(TwoSum(nums,target))
+
+
+def TwoSum(nums,target):
+    match = {}
+    for i,  num in enumerate(nums):
+        new_val = target - num
+        if new_val in match:
+            return [match[new_val],i]
+        else:
+            match[new_val] =i
+            
+            
 
 
 

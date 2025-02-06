@@ -9,3 +9,4 @@ def ValidAnagram(s,t):
 s = "anagram" 
 t = "nagaram"
 print(ValidAnagram(s,t))
+

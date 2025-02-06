@@ -15,5 +15,6 @@ print(ContainsDuplication(nums))
 
 
 
+
 def ContainsDuplication(nums):
     return len(set(nums))<len(nums)
