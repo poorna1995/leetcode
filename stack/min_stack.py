@@ -1,0 +1,3 @@
+def MinStack(input):
+    stack =[]
+    
