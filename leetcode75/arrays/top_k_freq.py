@@ -16,8 +16,6 @@ def TopKFreq(nums, k):
         if num not in result:
             result[num] = 0
         result[num] += 1
-    # sorted_keys = [k for k, v in sorted(result.items(), key=lambda x: x[1], reverse=True)]
-    # sorted_keys = sorted(result, key=result.get, reverse=True)
     sorted_keys = sorted(result, reverse = True)
     return sorted_keys[:k]
 
