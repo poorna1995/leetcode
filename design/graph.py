@@ -50,6 +50,15 @@ class Graph:
         return False            
         
         
-        
+if __name__ == "__main__":
+    g = Graph()
+
+    g.addEdge(3, 4)
+    g.addEdge(3, 2)
+    g.addEdge(1, 2)
+    g.addEdge(1, 3)
+
+    print(g.adj)
+    print(g.hasPath(1, 310))
         
     
